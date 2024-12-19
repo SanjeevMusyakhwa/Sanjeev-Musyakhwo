@@ -100,7 +100,7 @@ body{
 }
 
 .social_icon i:hover{
-  background-color: #ff759c;
+  background-color: #00cc97;
 }
 
 .side_menu{
@@ -132,17 +132,17 @@ body{
 }
 
 .side_menu li:hover a{
-  color: #ff759c;
+  color: #00cc97;
 }
 
 .side_menu li:hover i{
-  color: #ff759c;
+  color: #00cc97;
 }
 
 .download_btn{
-  width: 300px;
+  width: 250px;
   height: 60px;
-  background-color: #0F141C;
+  background-color: #51766c;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -160,6 +160,16 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #Ff759c;
+  color: #fff;
+  transition: .3s ease;
+  top: 10%;
+  position: absolute;
+  left: 5%;
+}
+
+.download_btn a{
+  color: #fff;
 }
 main{
   width:80%;
