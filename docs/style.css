@@ -20,6 +20,7 @@ body{
   align-items: center;
   position: relative;
   z-index:1;
+  color: #fff;
 }
 body:after{
   content: '';
@@ -35,11 +36,21 @@ img{
   width: 100%;
   height: 100%;
 }
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5% 8%;
+  
+}
+
 .container{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90vw;
+  width: 72vw;
   height: 100vh;
   background-color: #0F141C;
 }
@@ -111,6 +122,7 @@ img{
   display: flex;
   cursor: pointer;
   transition: .3s ease;
+  background-color: #0F141C;
  
 }
 
@@ -168,7 +180,7 @@ img{
 }
 
 .download_btn i{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -191,6 +203,8 @@ img{
 }
 .download_btn:hover i{
   left: 75%;
+  background-color: #fff;
+  color: #Ff759c;
 }
 .download_btn:hover a{
   padding-right: 32%;
@@ -201,6 +215,16 @@ main{
   width:80%;
   height: 100vh;
   background-color: #0F141C;
+  overflow-y: scroll;
+}
+
+main::-webkit-scrollbar{
+  width: 5px;
+  background-color: transparent;
+}
+
+main::-webkit-scrollbar-thumb{
+  background-color: #00cc97;
 }
 
 /* Hero section */
@@ -209,8 +233,9 @@ main{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10% 2%;
+  padding: 5% 2%;
   color: #fff;
+  position: relative;
 
 }
 
@@ -310,8 +335,8 @@ button:hover:after{
 
 .user_det{
   position: absolute;
-  top: 70%;
-  left: 65%;
+  top: 80%;
+  left: 55%;
   background-color: #171B22;
   color: #fff;
   width: 400px;
@@ -353,7 +378,7 @@ button:hover:after{
 
 .head_text{
   color: #fff;
-  font-size: 400;
+  font-weight: 400;
   padding-left: 2%;
 }
 
@@ -365,7 +390,7 @@ button:hover:after{
   place-content:center;
   place-items: center;
   overflow: hidden;
-  transform: translate(30px);
+  transform: translateY(30px);
 }
 
 .slide-track{
@@ -392,3 +417,100 @@ button:hover:after{
     transform: translateX(calc(-150px * 20));
 }
 }
+
+/* About section */
+
+.about{
+  flex-direction: column;
+
+}
+
+.headings{
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.headings h1{
+ font-size: 3rem;
+ color: #00cc97;
+}
+
+.dot{
+  width: 10px;
+  color: #00cc97;
+}
+
+.underline {
+  width: 100%;
+  height: 12px;
+  margin-top: 15px;
+  background: linear-gradient(90deg, #47b434 0%, #34b447 100%);
+  border: none; /* Ensures no border is added */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
+  border-radius: 4px; /* Smooths corners */
+  outline: none; /* Ensures no focus outline */
+  
+}
+
+
+.headings:after{
+  color: '';
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(131,131,131,1);
+
+}
+
+.about p{
+  font-size:1.3rem ;
+  font-weight: 300;
+  color: rgba(131,131,131,1);
+}
+.about p span{
+  color: #fff;
+}
+
+.about_info{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info h2 span {
+  color:rgba(131,131,131,1);
+  font-weight: 400;
+}
+
+.info_det{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info_det h2{
+  font-weight: 300;
+
+}
+
+.info_det span{
+  margin: 0 10px;
+}
+
+
