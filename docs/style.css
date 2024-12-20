@@ -336,10 +336,59 @@ button:hover:after{
   height: 50px;
   border-radius: 100%;
   overflow: hidden;
-  filter:grayscale(100)
+  filter:grayscale(100);
+  margin-right: 5px;
+  transition: .3s ease;
+}
+
+.user_img:hover{
+  cursor: pointer;
+  filter:grayscale(0)
 }
 
 .user_info p{
   font-size:1.2rem;
   font-weight: 400;
+}
+
+.head_text{
+  color: #fff;
+  font-size: 400;
+  padding-left: 2%;
+}
+
+.slider{
+  height:50px;
+  margin: auto;
+  width: 90%;
+  display: grid;
+  place-content:center;
+  place-items: center;
+  overflow: hidden;
+  transform: translate(30px);
+}
+
+.slide-track{
+  display: flex;
+  align-items: center;
+  width: calc(250px * 40);
+  animation: scrolls 40s forwards infinite;
+  position: relative;
+}
+.slide{
+  width: 150px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin:0 30px;
+}
+
+@keyframes scrolls{
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(calc(-150px * 20));
+}
 }
