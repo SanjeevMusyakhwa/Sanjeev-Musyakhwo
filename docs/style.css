@@ -67,7 +67,8 @@ section{
 }
 
 .profile_img{
-  width: 70%;
+  width: 50%;
+  margin-top: 20px;
 
 }
 
@@ -169,7 +170,6 @@ section{
 .download_btn{
   width: 300px;
   height: 60px;
-  background-color: #51766c;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -548,4 +548,111 @@ button:hover:after{
   background-color: #Ff759c;
   z-index: 1;
   border: 2px solid #fff;
+}
+
+.education_card h2{
+  font-size: 1.5rem;
+  font-weight: 200;
+  transition: .3s;
+}
+
+.education_card h3{
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #999;
+  transition: .3s;
+}
+
+.education_card p{
+  font-size: 1.1rem;
+  color: #999;
+  font-weight: 300;
+  transition: .3s;
+}
+
+.education_card:hover h2{
+  color:#Ff759c
+}
+
+.education_card:hover h3{
+  color:#fff
+}
+
+.education_card:hover p{
+  color:#fff
+}
+
+.experience_cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.experience_card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  padding-left: 5%;
+}
+
+.experience_card::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5px;
+  height: 100%;
+  background-color: #fff;
+
+}
+
+.experience_card:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2.8%;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #Ff759c;
+  z-index: 1;
+  border: 2px solid #fff;
+}
+
+.experience_card h2{
+  font-size: 1.5rem;
+  font-weight: 200;
+  transition: .3s;
+}
+
+.experience_card h3{
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #999;
+  transition: .3s;
+}
+
+.experience_card p{
+  font-size: 1.1rem;
+  color: #999;
+  font-weight: 300;
+  transition: .3s;
+}
+
+.experience_card:hover h2{
+  color:#Ff759c
+}
+
+.experience_card:hover h3{
+  color:#fff
+}
+
+.experience_card:hover p{
+  color:#fff
 }
