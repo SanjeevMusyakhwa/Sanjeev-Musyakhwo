@@ -69,7 +69,7 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .text{
@@ -225,25 +225,25 @@ main{
 }
 
 .content h1 {
-  font-size: 6rem;
-  line-height: 6.5rem ;
-  font-weight: 500;
+  font-size: 3rem;
+  line-height: 2rem ;
+  font-weight: 600;
 
 }
 .content h1 span{
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .content .typed_text{
   color: #Ff759c;
-  margin: 10px;
+  margin: 2px;
 }
 
 .content p {
   font-size: 1.2rem;
   font-weight: 400;
   color: rgba(131,131,131,0.5);
-  margin-top: 30px;
+  margin-top: 2px;
 }
 
 .hero_text{
@@ -336,8 +336,10 @@ button:hover:after{
   height: 50px;
   border-radius: 100%;
   overflow: hidden;
+  filter:grayscale(100)
 }
 
 .user_info p{
-  font-size: ;
+  font-size:1.2rem;
+  font-weight: 400;
 }
