@@ -50,7 +50,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 72vw;
+  width: 95%;
   height: 100vh;
   background-color: #0F141C;
 }
@@ -436,29 +436,15 @@ button:hover:after{
 
 .headings h1{
  font-size: 3rem;
- color: #00cc97;
+ color: #fff;
 }
+.underline{
+  margin-top: 10px;
 
-.dot{
-  width: 10px;
-  color: #00cc97;
 }
-
-.underline {
-  width: 100%;
-  height: 12px;
-  margin-top: 15px;
-  background: linear-gradient(90deg, #47b434 0%, #34b447 100%);
-  border: none; /* Ensures no border is added */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
-  border-radius: 4px; /* Smooths corners */
-  outline: none; /* Ensures no focus outline */
-  
-}
-
 
 .headings:after{
-  color: '';
+  content: '';
   position: absolute;
   top: 100%;
   right: 0;
@@ -513,4 +499,19 @@ button:hover:after{
   margin: 0 10px;
 }
 
+/* EDUCATION AND EXPERIENCE */
+.education_experiences{
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  color: #fff;
+}
 
+.education_cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 40px;
+}
