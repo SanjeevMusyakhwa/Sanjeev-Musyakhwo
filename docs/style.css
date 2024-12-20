@@ -661,3 +661,102 @@ button:hover:after{
 .experience_card:hover p{
   color:#fff
 }
+
+.coding_skills{
+  flex-direction: column;
+  padding: 0px 50px;
+}
+
+.skills_container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  place-content: center;
+  place-items: center;
+  margin-top: 20px;
+}
+
+.skills{
+  width: 130px;
+  height: 130px;
+  border-radius: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.skills:after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  width: 90%;
+  height: 85%;
+  border-radius: 100%;
+  z-index: -1;
+}
+
+/* Design Skills section */
+.design_skills{
+  flex-direction: column;
+  padding: 0px 50px;
+  gap: 20px;
+
+}
+
+.design_skills_container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.design_skill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5%;
+  border-radius: 50px;
+}
+
+.skill_info p{
+  font-size: 0.8rem;
+}
+
+.design_skill:nth-child(1){
+  border: 1px solid rgb(2,175,132);
+  background-color:rgba(2, 175, 132, 0.2) ;
+}
+.design_skill:nth-child(2){
+  border: 1px solid rgb(49,168,255);
+  background-color:rgba(49, 168, 255, 0.2) ;
+}
+.design_skill:nth-child(3){
+  border: 1px solid rgb(199,79,196);
+  background-color:rgba(199, 79, 196, 0.2) ;
+}
+.design_skill:nth-child(4){
+  border: 1px solid rgb(205,177,76);
+  background-color:rgba(205, 177, 76, 0.2) ;
+}
+.design_skill:nth-child(5){
+  border: 1px solid rgb(222,47,91);
+  background-color:rgba(222, 47, 91, 0.2) ;
+}
+.design_skill:nth-child(6){
+  border: 1px solid rgb(249, 33, 184);
+  background-color:rgba(249, 33, 184, 0.2) ;
+}
+
+.skill_img{
+  width: 30px;
+  height: 30px;
+}
