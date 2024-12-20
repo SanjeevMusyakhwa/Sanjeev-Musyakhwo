@@ -335,8 +335,8 @@ button:hover:after{
 
 .user_det{
   position: absolute;
-  top: 80%;
-  left: 55%;
+  top: 75%;
+  left: 50%;
   background-color: #171B22;
   color: #fff;
   width: 400px;
@@ -500,7 +500,7 @@ button:hover:after{
 }
 
 /* EDUCATION AND EXPERIENCE */
-.education_experiences{
+.education_experience{
   width: 100%;
   display: flex;
   gap: 30px;
@@ -514,4 +514,38 @@ button:hover:after{
   align-items: flex-start;
   gap: 30px;
   margin-top: 40px;
+}
+
+.education_card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  padding-left: 5%;
+}
+
+.education_card::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5px;
+  height: 100%;
+  background-color: #fff;
+
+}
+
+.education_card:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1.5%;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #Ff759c;
+  z-index: 1;
+  border: 2px solid #fff;
 }
