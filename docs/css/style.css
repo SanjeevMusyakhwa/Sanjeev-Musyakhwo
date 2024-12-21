@@ -729,6 +729,17 @@ button:hover:after{
 .project_card h2{
   font-size: 1rem;
   font-weight: 400;
+  margin-top: 10px ;
+}
+
+.project_card h2 a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.project_card h2 a:hover{
+  color: #00cc97;
+  
 }
 .project_card p{
   color: #999;
