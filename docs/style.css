@@ -111,7 +111,10 @@ section{
 
 
 }
-
+.social_icon a{
+  text-decoration: none;
+  color: #fff;
+}
 .social_icon i{
   font-size: 1.5rem;
   width: 40px;
@@ -625,7 +628,7 @@ button:hover:after{
   content: '';
   position: absolute;
   top: 0;
-  left: -2.8%;
+  left: -1.5%;
   width: 20px;
   height: 20px;
   border-radius: 100%;
@@ -806,7 +809,7 @@ button:hover:after{
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-
+  height: 250px;
 
 }
 .project_card:hover .hide_project{
