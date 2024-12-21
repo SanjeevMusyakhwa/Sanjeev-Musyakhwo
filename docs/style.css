@@ -57,12 +57,13 @@ section{
 .side_bar{
   width: 30%;
   background-color: #171b22;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  border-radius: 30px;
 }
 
 .profile_img{
@@ -332,102 +333,6 @@ button:hover:after{
   width: 55%;
   position: relative;
 
-}
-
-.user_info{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.user_det h3{
-  font-weight:400;
-}
-
-.user_det{
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  background-color: #171B22;
-  color: #fff;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 2% 1%;
-  gap: 20px;
-  border-radius: 20px;
-
-}
-
-.user_imgs{
-  display: flex;
-  align-items: center;
-
-}
-
-.user_img{
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  overflow: hidden;
-  filter:grayscale(100);
-  margin-right: 5px;
-  transition: .3s ease;
-}
-
-.user_img:hover{
-  cursor: pointer;
-  filter:grayscale(0)
-}
-
-.user_info p{
-  font-size:1.2rem;
-  font-weight: 400;
-}
-
-.head_text{
-  color: #fff;
-  font-weight: 400;
-  padding-left: 2%;
-}
-
-.slider{
-  height:50px;
-  margin: auto;
-  width: 90%;
-  display: grid;
-  place-content:center;
-  place-items: center;
-  overflow: hidden;
-  transform: translateY(30px);
-}
-
-.slide-track{
-  display: flex;
-  align-items: center;
-  width: calc(250px * 40);
-  animation: scrolls 40s forwards infinite;
-  position: relative;
-}
-.slide{
-  width: 150px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  margin:0 30px;
-}
-
-@keyframes scrolls{
-  0%{
-    transform: translateX(0px);
-  }
-  100%{
-    transform: translateX(calc(-150px * 20));
-}
 }
 
 /* About section */
@@ -763,6 +668,10 @@ button:hover:after{
   background-color:rgba(249, 33, 184, 0.2) ;
 }
 
+.design_skill:nth-child(7){
+  border: 1px solid rgb(189, 255, 218);
+  background-color:rgba(189, 255, 218, 0.2) ;
+}
 .skill_img{
   width: 30px;
   height: 30px;
