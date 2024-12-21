@@ -16,3 +16,11 @@ var typed2 = new Typed('.hero_text', {
   cursorChar: '_',     // Cursor character
   loop: true,          // Loop forever
 });
+
+
+let bar = document.querySelector('.bars');
+let sidebar = document.querySelector('.side_bar');
+
+bar.addEventListener('click', () => {
+  sidebar.classList.toggle('show_side_bar');
+});

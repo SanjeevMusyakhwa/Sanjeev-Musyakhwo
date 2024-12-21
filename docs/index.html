@@ -10,6 +10,8 @@
   <!-- Remix icon -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
 </head>
 
 <body>
@@ -36,8 +38,7 @@
         <li><i class="ri-user-line"></i><a href="#about">About</a></li>
         <li><i class="ri-id-card-line"></i><a href="#resume">Resume</a></li>
         <li><i class="ri-id-card-line"></i><a href="#skills">Skills</a></li>
-        <li><i class="ri-customer-service-2-line"></i><a href="#services">Services</a></li>
-        <li><i class="ri-briefcase-line"></i><a href="#protfolio">Protfolio</a></li>
+        <li><i class="ri-briefcase-line"></i><a href="#projects">Projects</a></li>
         <li><i class="ri-at-line"></i><a href="#contact">Contact</a></li>
       </ul>
       <div class="download_btn">
@@ -46,7 +47,9 @@
       </div>
     </div>
     <!-- END SIDE BAR -->
-
+    <div class="bars">
+      <i class="ri-menu-2-line"></i>
+    </div>
     <!-- MAIN  -->
     <main>
       <div class="hero">
@@ -138,7 +141,6 @@
           <div class="slide"><img src="img/brand4.png" alt=""></div>
         </div>
       </div>
-
       <!-- ABOUT SECTION -->
       <section class="about" id="about">
         <div class="headings">
@@ -232,27 +234,31 @@
       <!-- End Education And Experience Section -->
 
       <!-- Coding Skills -->
-       <section class="coding_skills" id="skills">
-          <div class="headings">
-            <h1>Coding Skills</h1>
-          </div>
-          <div class="skills_container">
-            <div class="skills" data-value="85%" style="background: conic-gradient(rgb(188,231,12) 85% ,rgba(128,128,128,0.28) 0deg);"> 85%</div>
-            <div class="skills" data-value="80%" style="background: conic-gradient(rgb(255, 242, 168) 80%, rgba(128,128,128,0.28) 0deg);"> 80%</div>
-            <div class="skills" data-value="50%" style="background: conic-gradient(rgb(103, 235, 255) 50%, rgba(128,128,128,0.28) 0deg);"> 50%</div>
-            <div class="skills" data-value="70%" style="background: conic-gradient(rgb(151, 113, 255) 70%, rgba(128,128,128,0.28) 0deg);"> 70%</div>
-          </div>
-       </section>
-       <!-- End Coding Skills Section -->
+      <section class="coding_skills" id="skills">
+        <div class="headings">
+          <h1>Coding Skills</h1>
+        </div>
+        <div class="skills_container">
+          <div class="skills" data-value="85%"
+            style="background: conic-gradient(rgb(188,231,12) 85% ,rgba(128,128,128,0.28) 0deg);"> 85%</div>
+          <div class="skills" data-value="80%"
+            style="background: conic-gradient(rgb(255, 242, 168) 80%, rgba(128,128,128,0.28) 0deg);"> 80%</div>
+          <div class="skills" data-value="50%"
+            style="background: conic-gradient(rgb(103, 235, 255) 50%, rgba(128,128,128,0.28) 0deg);"> 50%</div>
+          <div class="skills" data-value="70%"
+            style="background: conic-gradient(rgb(151, 113, 255) 70%, rgba(128,128,128,0.28) 0deg);"> 70%</div>
+        </div>
+      </section>
+      <!-- End Coding Skills Section -->
 
-       <!-- Design Skills -->
-       <section class="design_skills">
+      <!-- Design Skills -->
+      <section class="design_skills">
         <div class="headings">
           <h1>Design Skills</h1>
         </div>
         <div class="design_skills_container">
           <!-- Skill Card 1 -->
-           <div class="design_skill">
+          <div class="design_skill">
             <div class="skill_img">
               <img src="img/html.png" alt="">
             </div>
@@ -260,9 +266,9 @@
               <h2>85%</h2>
               <p>HTML</p>
             </div>
-           </div>
-           <!-- Skill Card 2 -->
-           <div class="design_skill">
+          </div>
+          <!-- Skill Card 2 -->
+          <div class="design_skill">
             <div class="skill_img">
               <img src="img/css-3.png" alt="">
             </div>
@@ -270,8 +276,8 @@
               <h2>80%</h2>
               <p>CSS</p>
             </div>
-           </div>
-           <div class="design_skill">
+          </div>
+          <div class="design_skill">
             <div class="skill_img">
               <img src="img/programing.png" alt="">
             </div>
@@ -279,8 +285,8 @@
               <h2>50%</h2>
               <p>JavaScript</p>
             </div>
-           </div>
-           <div class="design_skill">
+          </div>
+          <div class="design_skill">
             <div class="skill_img">
               <img src="img/python.png" alt="">
             </div>
@@ -288,8 +294,8 @@
               <h2>70%</h2>
               <p>Python</p>
             </div>
-           </div>
-           <div class="design_skill">
+          </div>
+          <div class="design_skill">
             <div class="skill_img">
               <img src="img/django.png" alt="">
             </div>
@@ -297,8 +303,8 @@
               <h2>80%</h2>
               <p>Django</p>
             </div>
-           </div>
-           <div class="design_skill">
+          </div>
+          <div class="design_skill">
             <div class="skill_img">
               <img src="img/wordpress.png" alt="">
             </div>
@@ -306,16 +312,179 @@
               <h2>60%</h2>
               <p>Wordpress</p>
             </div>
-           </div>
+          </div>
         </div>
-       </section>
-       <!-- End Design Skills -->
+      </section>
+      <!-- End Design Skills -->
 
-       <section class="services" id="services">
+      <!-- projects -->
+      <section class="projects" id="projects">
         <div class="headings">
-          <h1>Services</h1>
+          <h1>Projects</h1>
         </div>
-       </section>
+        <div class="project_cards">
+
+          <!-- PROJECT CARD 1 -->
+          <div class="project_card">
+            <div class="project_img">
+              <img src="img/portfolio1.png" alt="">
+              <div class="hide_project">
+                <img src="img/portfoliSvg1.svg" alt="">
+                <h2>Todo App using Django</h2>            
+              </div>
+            </div>
+            <h2>Blog App using Django</h2>
+            <p>Blog App</p>
+          </div>
+          <!-- End Project Card 1 -->
+           <!-- PROJECT CARD 2 -->
+          <div class="project_card">
+            <div class="project_img">
+              <img src="img/portfolio1.png" alt="">
+              <div class="hide_project">
+                <img src="img/portfoliSvg1.svg" alt="">
+                <h2>Todo App using Django</h2>            
+              </div>
+            </div>
+            <h2>Blog App using Django</h2>
+            <p>Blog App</p>
+          </div>
+          <!-- End Project Card 2 -->
+           <!-- PROJECT CARD 3 -->
+          <div class="project_card">
+            <div class="project_img">
+              <img src="img/portfolio1.png" alt="">
+              <div class="hide_project">
+                <img src="img/portfoliSvg1.svg" alt="">
+                <h2>Todo App using Django</h2>            
+              </div>
+            </div>
+            <h2>Blog App using Django</h2>
+            <p>Blog App</p>
+          </div>
+          <!-- End Project Card 3 -->
+           <!-- PROJECT CARD 4 -->
+          <div class="project_card">
+            <div class="project_img">
+              <img src="img/portfolio1.png" alt="">
+              <div class="hide_project">
+                <img src="img/portfoliSvg1.svg" alt="">
+                <h2>Todo App using Django</h2>            
+              </div>
+            </div>
+            <h2>Blog App using Django</h2>
+            <p>Blog App</p>
+          </div>
+          <!-- End Project Card 4 -->
+          <div class="project_card">
+            <div class="project_img">
+              <img src="img/portfolio1.png" alt="">
+              <div class="hide_project">
+                <img src="img/portfoliSvg1.svg" alt="">
+                <h2>Todo App using Django</h2>            
+              </div>
+            </div>
+            <h2>Blog App using Django</h2>
+            <p>Blog App</p>
+          </div>
+          <!-- End Project Card 5 -->
+           <!-- PROJECT CARD 6 -->
+          <div class="project_card">
+            <div class="project_img">
+              <img src="img/portfolio1.png" alt="">
+              <div class="hide_project">
+                <img src="img/portfoliSvg1.svg" alt="">
+                <h2>Todo App using Django</h2>            
+              </div>
+            </div>
+            <h2>Blog App using Django</h2>
+            <p>Blog App</p>
+          </div>
+          <!-- End Project Card 6 -->
+           <!-- PROJECT CARD 7 -->
+          <div class="project_card">
+            <div class="project_img">
+              <img src="img/portfolio1.png" alt="">
+              <div class="hide_project">
+                <img src="img/portfoliSvg1.svg" alt="">
+                <h2>Todo App using Django</h2>            
+              </div>
+            </div>
+            <h2>Blog App using Django</h2>
+            <p>Blog App</p>
+          </div>
+          <!-- End Project Card 7 -->
+           <!-- PROJECT CARD 8 -->
+          <div class="project_card">
+            <div class="project_img">
+              <img src="img/portfolio1.png" alt="">
+              <div class="hide_project">
+                <img src="img/portfoliSvg1.svg" alt="">
+                <h2>Todo App using Django</h2>            
+              </div>
+            </div>
+            <h2>Blog App using Django</h2>
+            <p>Blog App</p>
+          </div>
+          <!-- End Project Card 8 -->
+           <!-- PROJECT CARD 9 -->
+          <div class="project_card">
+            <div class="project_img">
+              <img src="img/portfolio1.png" alt="">
+              <div class="hide_project">
+                <img src="img/portfoliSvg1.svg" alt="">
+                <h2>Todo App using Django</h2>            
+              </div>
+            </div>
+            <h2>Blog App using Django</h2>
+            <p>Blog App</p>
+          </div>
+          <!-- PROJECT CARD 4 -->
+        </div>
+        <div class="view_btn">
+          <button>View More</button>
+        </div>
+      </section>
+      <!-- End Projects Section -->
+       <!-- Contact -->
+        <section class="contact" id="contact">
+          <div class="headings">
+            <h1>Get in Touch</h1>
+          </div>
+          <div class="contact_head">
+            <h2>TAKE A COFFEE AND CHAT WITH ME</h2>
+          </div>
+          <div class="contact_container">
+            <div class="contact_content">
+              <div class="contact_box">
+                <i class="ri-mail-line"></i>
+                 <div class="box_info">
+                  <p>Email</p>
+                  <h2>sanjeevmusyakhwa@gmail.com</h2>
+                 </div>
+              </div>
+              <div class="inputs">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Subject">
+              </div>
+            </div>
+
+            <div class="contact_content">
+              <div class="contact_box">
+                <i class="ri-cellphone-fill"></i>
+                 <div class="box_info">
+                  <p>Phone Number</p>
+                  <h2>+977 9749341363</h2>
+                 </div>
+              </div>
+              <div class="inputs">
+                <input type="email" placeholder="Your email">
+                <input type="text" placeholder="Your Subject">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Contact -->
     </main>
     <!-- END MAIN -->
   </div>
@@ -327,6 +496,7 @@
 
   <!-- Typed Js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 
