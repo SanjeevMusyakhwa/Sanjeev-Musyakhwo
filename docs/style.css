@@ -220,6 +220,7 @@ section{
 
 .bars{
   display: none;
+  cursor: pointer;
 }
 /* Main section */
 main{
@@ -872,6 +873,8 @@ button:hover:after{
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
   }
   .show_side_bar{
     opacity: 1;
@@ -892,9 +895,6 @@ button:hover:after{
   }
   .content{
     width: 100%;
-  }
-  .user_det{
-    display: none;
   }
   .hero_img{
     width: 80%;
@@ -931,9 +931,6 @@ button:hover:after{
   }
   .project_cards{
     grid-template-columns: repeat(2,1fr);
-  }
-  .user_det{
-    display: none;
   }
   .hero_img{
     width: 80%;
