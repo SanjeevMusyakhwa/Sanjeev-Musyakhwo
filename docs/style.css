@@ -909,6 +909,11 @@ button:hover:after{
   font-weight: 300;
 }
 
+.box_info a{
+  text-decoration: none;
+  color: #999;
+}
+
 
 /* Responsive */
 
@@ -964,8 +969,15 @@ button:hover:after{
   .education_card{
     padding-left: 10%;
   }
+
+  .experience_card{
+    padding-left: 10%;
+  }
   .design_skills_container{
     grid-template-columns: repeat(3,1fr);
+  }
+  .contact_container{
+    flex-direction: column;
   }
 }
 
@@ -975,13 +987,13 @@ button:hover:after{
     width: 40%;
   }
   .education_card:before{
-    left: -4%;
+    left: -2.5%;
 
   }
-  .experience{
-    transform:translateY(-37px);
+  .experience_card:before{
+    left: -2.5%;
   }
-  .project_card{
+  .project_cards{
     grid-template-columns: repeat(2,1fr);
   }
   .user_det{
@@ -993,7 +1005,17 @@ button:hover:after{
   .education_card{
     padding-left: 10%;
   }
+
+  .experience_card{
+    padding-left: 10%;
+  }
+  .skills_container{
+    grid-template-columns: repeat(2,1fr);
+  }
   .design_skills_container{
     grid-template-columns: repeat(3,1fr);
+  }
+  .contact_container{
+    flex-direction: column;  
   }
 }
